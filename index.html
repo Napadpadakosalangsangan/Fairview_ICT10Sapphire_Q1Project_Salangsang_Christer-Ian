@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1 Project</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+</head>
+<body>
+
+  <h1>Sven & Eli's Virtual Vending Machine </h1>
+  <h2>Items: </h2>
+
+<!--Snacks-->
+  <div class="container" id="snacks">
+    <h3>Snacks</h3>
+
+    <label>
+      <input type="checkbox" id="chips">
+      <span>Chips - $5.00</span>
+    </label><br>
+
+    <label>
+      <input type="checkbox" id="biscuits">
+      <span>Biscuits - $2.50</span>
+    </label><br>
+
+    <label>
+      <input type="checkbox" id="gummies">
+      <span>Gummies - $2.00</span>
+    </label>
+  </div><br>
+
+<!--Drinks-->
+  <div class="container" id="drinks">
+    <h3>Drinks</h3>
+
+    <label>
+      <input type="checkbox" id="soda">
+      <span>Soda - $1.50</span>
+    </label><br>
+
+    <label>
+      <input type="checkbox" id="water">
+      <span>Water - $1.50</span>
+    </label><br>
+
+    <label>
+      <input type="checkbox" id="juice">
+      <span>Fruit Juice - $1.50</span>
+    </label>
+  </div><br>
+
+
+
+
+
+
+  <button type="button" py-click="order">Create Order</button><br><br>
+
+  <div>
+
+    <div>===== RECEIPT =====</div>
+      <div>Subtotal: 
+        <span id="subtotal">$0.00</span>
+      </div>
+
+      <div>VAT: 
+        <span id="vat">$0.00</span>
+      </div>
+
+      <div>Total:
+        <span id="total">$0.00</span>
+      </div>
+  </div>
+
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
