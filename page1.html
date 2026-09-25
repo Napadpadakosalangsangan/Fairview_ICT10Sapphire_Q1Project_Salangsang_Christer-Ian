@@ -10,8 +10,26 @@
 </head>
 <body>
   <h1>Sven & Eli's Virtual Vending Machine </h1>
-  <a href="index.html">Receipt Generator</a>
+  <a href="index.html">Receipt Generator</a><br><br>
 
+
+  <label>Category</label><br><br>
+  <select id="category">
+    <option value="SNA">Snacks</option>
+    <option value="DRI">Drinks</option>
+  </select><br><br>
+
+  <label>Product Name</label><br><br>
+  <input type="text" id="pr_name" placeholder="e.g., Fruit Juice"><br><br>
+
+  <label>Quantity</label><br><br>
+  <input type="number" id="quantity" placeholder="e.g., 50"><br><br>
+
+  <button py-click="generate_sku">Generate SKU</h2>
+  <span id="sku">XXX-XXX-XXX</span>
+
+
+  
   <script type="py" src="sku.py"></script>
 </body>
 </html>
