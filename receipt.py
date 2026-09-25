@@ -8,19 +8,19 @@ def order(e):
   biscuits = 2.50
   gummies = 2.00
 
-    # Drinks
+  # Drinks
   soda = 1.50
-  water = 1.50
+  water = 1.00
   juice = 1.50
 
-  # Detecting the checkboxes
+# Detecting the checkboxes
 
-    # Snacks
+  # Snacks
   chips_ordered = int(document.getElementById("chips").checked)
   biscuits_ordered = document.getElementById("biscuits").checked
   gummies_ordered = document.getElementById("gummies").checked
 
-    # Drinks
+  # Drinks
   soda_ordered = document.getElementById("soda").checked
   water_ordered = document.getElementById("water").checked
   juice_ordered = document.getElementById("juice").checked
